@@ -9,7 +9,7 @@ function Footer() {
     <footer className="bg-primary text-white mt-16">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Visible NAP Block for Local SEO */}
-         <div className="pl-30">
+         <div className="pl-30 block md:hidden">
             <Link href="/" className="inline-block mb-4">
               <Image
                 src="/logo.png"
