@@ -1,11 +1,16 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import { Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  preload: true,
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://teaology.in"),
@@ -115,6 +120,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://vercel-insights.com" />
         <script
           type="application/ld+json"
           suppressHydrationWarning
@@ -152,7 +160,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} font-sans antialiased bg-cream text-slate-900`}>{children}</body>
+      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
