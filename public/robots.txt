@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /login
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Host
+Host: https://teaology.in
+
+# Sitemaps
+Sitemap: https://teaology.in/sitemap.xml

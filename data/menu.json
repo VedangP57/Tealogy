@@ -1,0 +1,154 @@
+{
+  "categories": [
+    {
+      "name": "Tea",
+      "slug": "tea",
+      "items": [
+        { "name": "NORMAL TEA (NO FLAVOUR)", "price": "15/20", "image": "/images/menu/normal-tea.jpg" },
+        { "name": "ADRAK TEA", "price": "15/20", "image": "/images/menu/adrak-tea.jpg" },
+        { "name": "CHOCOLATE TEA", "price": "20/25", "image": "/images/menu/chocolate-tea.jpg" },
+        { "name": "ROSE TEA", "price": "20/25", "image": "/images/menu/rose-tea.jpg" },
+        { "name": "PAAN TEA", "price": "20/25", "image": "/images/menu/paan-tea.jpg" },
+        { "name": "KESAR TEA", "price": "20/25", "image": "/images/menu/kesar-tea.jpg" },
+        { "name": "MANGO TEA", "price": "20/25", "image": "/images/menu/mango-tea.jpg" },
+        { "name": "MASALA TEA", "price": "20/25", "image": "/images/menu/masala-tea.jpg" },
+        { "name": "ELAICHI TEA", "price": "20/25", "image": "/images/menu/elaichi-tea.jpg" },
+        { "name": "BLACK TEA", "price": "20/25", "image": "/images/menu/black-tea.jpg" },
+        { "name": "GREEN TEA", "price": "20/25", "image": "/images/menu/green-tea.jpg" }
+      ]
+    },
+    {
+      "name": "Coffee",
+      "slug": "coffee",
+      "items": [
+        { "name": "HOT COFFEE", "price": "25/30", "image": "/images/menu/hot-coffee.jpg" },
+        { "name": "STRONG HOT COFFEE", "price": "25/30", "image": "/images/menu/strong-coffee.jpg" },
+        { "name": "CHOCOLATE COFFEE", "price": "25/30", "image": "/images/menu/chocolate-coffee.jpg" },
+        { "name": "BLACK COFFEE", "price": "25/30", "image": "/images/menu/black-coffee.jpg" },
+        { "name": "STRONG CHOCOLATE COFFEE", "price": "30/35", "image": "/images/menu/strong-chocolate-coffee.jpg" }
+      ]
+    },
+    {
+      "name": "Hot Lemon Tea",
+      "slug": "hot-lemon-tea",
+      "items": [
+        { "name": "LEMON TEA", "price": "60", "image": "/images/menu/lemon-tea.jpg" },
+        { "name": "LEMON HONEY TEA", "price": "60", "image": "/images/menu/lemon-honey-tea.jpg" },
+        { "name": "LEMON GINGER TEA", "price": "60", "image": "/images/menu/lemon-ginger-tea.jpg" }
+      ]
+    },
+    {
+      "name": "Ice Crushes",
+      "slug": "ice-crushes",
+      "items": [
+        { "name": "STRAWBERRY", "price": "60", "image": "/images/menu/strawberry-crush.jpg" },
+        { "name": "KIWI", "price": "60", "image": "/images/menu/kiwi-crush.jpg" },
+        { "name": "BLUEBERRY", "price": "70", "image": "/images/menu/blueberry-crush.jpg" }
+      ]
+    },
+    {
+      "name": "Shakes",
+      "slug": "shakes",
+      "items": [
+        { "name": "OREO SHAKE", "price": "90", "image": "/images/menu/oreo-shake.jpg" },
+        { "name": "BOURBON SHAKE", "price": "90", "image": "/images/menu/bourbon-shake.jpg" },
+        { "name": "KIT KAT SHAKE", "price": "90", "image": "/images/menu/kitkat-shake.jpg" },
+        { "name": "CADBURY SHAKE", "price": "90", "image": "/images/menu/cadbury-shake.jpg" },
+        { "name": "CARAMEL SHAKE", "price": "90", "image": "/images/menu/caramel-shake.jpg" },
+        { "name": "BROWNIE SHAKE", "price": "100", "image": "/images/menu/brownie-shake.jpg" }
+      ]
+    },
+    {
+      "name": "Fruit Shakes",
+      "slug": "fruit-shakes",
+      "items": [
+        { "name": "STRAWBERRY SHAKE", "price": "80", "image": "/images/menu/strawberry-shake.jpg" },
+        { "name": "MANGO SHAKE", "price": "80", "image": "/images/menu/mango-shake.jpg" },
+        { "name": "KIWI SHAKE", "price": "80", "image": "/images/menu/kiwi-shake.jpg" },
+        { "name": "LITCHI SHAKE", "price": "80", "image": "/images/menu/litchi-shake.jpg" },
+        { "name": "BLUEBERRY SHAKE", "price": "80", "image": "/images/menu/blueberry-shake.jpg" }
+      ]
+    },
+    {
+      "name": "Milk",
+      "slug": "milk",
+      "items": [
+        { "name": "KESAR BADAM", "price": "50", "image": "/images/menu/kesar-badam.jpg" },
+        { "name": "MILK (HOT)", "price": "50", "image": "/images/menu/hot-milk.jpg" },
+        { "name": "ROSE MILK (COLD)", "price": "50", "image": "/images/menu/rose-milk.jpg" }
+      ]
+    },
+    {
+      "name": "Mocktails",
+      "slug": "mocktails",
+      "items": [
+        { "name": "PINK PANTHER", "price": "70", "image": "/images/menu/pink-panther.jpg" },
+        { "name": "KIWI COOLER", "price": "70", "image": "/images/menu/kiwi-cooler.jpg" },
+        { "name": "LITCHI DELIGHT", "price": "70", "image": "/images/menu/litchi-delight.jpg" },
+        { "name": "MANGO BLOSSOM", "price": "70", "image": "/images/menu/mango-blossom.jpg" },
+        { "name": "COOL BLUE", "price": "70", "image": "/images/menu/cool-blue.jpg" },
+        { "name": "MOJITO", "price": "80", "image": "/images/menu/mojito.jpg" }
+      ]
+    },
+    {
+      "name": "Ice Tea",
+      "slug": "ice-tea",
+      "items": [
+        { "name": "ICE TEA", "price": "60", "image": "/images/menu/ice-tea.jpg" },
+        { "name": "LEMON MINT ICE TEA", "price": "70", "image": "/images/menu/lemon-mint-ice-tea.jpg" }
+      ]
+    },
+    {
+      "name": "Bites",
+      "slug": "bites",
+      "items": [
+        { "name": "TEALOGY SPECIAL", "price": "50", "image": "/images/menu/tealogy-special.jpg" },
+        { "name": "MASKA BUN", "price": "80", "image": "/images/menu/maska-bun.jpg" },
+        { "name": "FRENCH FRIES", "price": "80", "image": "/images/menu/french-fries.jpg" },
+        { "name": "POTATO BITES", "price": "80", "image": "/images/menu/potato-bites.jpg" },
+        { "name": "CHEESE SHOT", "price": "90", "image": "/images/menu/cheese-shot.jpg" },
+        { "name": "MASALA FRIES", "price": "90", "image": "/images/menu/masala-fries.jpg" },
+        { "name": "PERI PERI FRIES", "price": "100", "image": "/images/menu/peri-peri-fries.jpg" },
+        { "name": "MEXICAN CHEESE FRIES", "price": "110", "image": "/images/menu/mexican-cheese-fries.jpg" }
+      ]
+    },
+    {
+      "name": "Cold Coffee",
+      "slug": "cold-coffee",
+      "items": [
+        { "name": "COLD COFFEE", "price": "80", "image": "/images/menu/cold-coffee.jpg" },
+        { "name": "COLD COFFEE WITH ICE CREAM", "price": "100", "image": "/images/menu/cold-coffee-icecream.jpg" },
+        { "name": "CHOCOLATE COLD COFFEE", "price": "100", "image": "/images/menu/chocolate-cold-coffee.jpg" },
+        {
+          "name": "CHOCOLATE COLD COFFEE WITH ICE CREAM",
+          "price": "120",
+          "image": "/images/menu/chocolate-cold-coffee-icecream.jpg"
+        },
+        {
+          "name": "TEALOGY SPECIAL COLD COFFEE WITH BROWNIE",
+          "price": "140",
+          "image": "/images/menu/tealogy-cold-coffee-brownie.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Maggi",
+      "slug": "maggi",
+      "items": [
+        { "name": "MASALA MAGGI", "price": "60", "image": "/images/menu/masala-maggi.jpg" },
+        { "name": "DOUBLE MASALA MAGGI", "price": "70", "image": "/images/menu/double-masala-maggi.jpg" },
+        { "name": "SCHEZWAN MAGGI", "price": "80", "image": "/images/menu/schezwan-maggi.jpg" },
+        { "name": "CHILLI GARLIC MAGGI", "price": "80", "image": "/images/menu/chilli-garlic-maggi.jpg" },
+        { "name": "CHEESE BUTTER MAGGI", "price": "90", "image": "/images/menu/cheese-butter-maggi.jpg" },
+        { "name": "VEGETABLE MAGGI", "price": "90", "image": "/images/menu/vegetable-maggi.jpg" },
+        { "name": "CHEESE CORN MAGGI", "price": "100", "image": "/images/menu/cheese-corn-maggi.jpg" },
+        { "name": "PUNJABI TADKA MAGGI", "price": "120", "image": "/images/menu/punjabi-tadka-maggi.jpg" }
+      ]
+    },
+    {
+      "name": "Hot Beverages",
+      "slug": "hot-beverages",
+      "items": [{ "name": "HOT CHOCOLATE", "price": "40", "image": "/images/menu/hot-chocolate.jpg" }]
+    }
+  ]
+}
