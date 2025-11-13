@@ -1,6 +1,6 @@
-import { memo } from "react"
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
+import { memo } from "react"
 import type { MenuCategory } from "@/lib/menu-types"
 
 const categoryImages: Record<string, string> = {
@@ -40,8 +40,12 @@ function CategoryCard({ category }: CategoryCardProps) {
           />
         </div>
         <div className="p-4 sm:p-5 md:p-6 text-center">
-          <h3 className="font-bold text-base sm:text-lg md:text-xl text-primary mb-1 line-clamp-2">{category.name}</h3>
-          <p className="text-xs sm:text-sm text-muted-foreground">{category.items.length} items</p>
+          <h3 className="font-bold text-base sm:text-lg md:text-xl text-primary mb-1 line-clamp-2">
+            {category.name}
+          </h3>
+          <p className="text-xs sm:text-sm text-muted-foreground">
+            {category.items.length} items
+          </p>
         </div>
       </div>
     </Link>

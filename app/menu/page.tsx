@@ -1,8 +1,8 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import CategoryCard from "@/components/category-card"
-import { getAllCategories } from "@/lib/menu"
 import type { Metadata } from "next"
+import CategoryCard from "@/components/category-card"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { getAllCategories } from "@/lib/menu"
 
 export const metadata: Metadata = {
   title: "Our Menu — Teaology Café Adajan, Surat",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Browse our full menu of handcrafted teas, coffees, shakes, and bites at Teaology Café in Adajan, Surat. Fresh flavors, exceptional quality.",
 }
 
-export const dynamic = 'force-static'
+export const dynamic = "force-static"
 export const revalidate = false
 
 export default function MenuPage() {
@@ -26,7 +26,8 @@ export default function MenuPage() {
               Our Menu
             </h1>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Explore our collection of premium teas, coffees, shakes, and delicious bites. Fresh flavors, exceptional quality.
+              Explore our collection of premium teas, coffees, shakes, and
+              delicious bites. Fresh flavors, exceptional quality.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6">

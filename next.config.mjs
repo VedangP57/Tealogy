@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
@@ -13,14 +13,14 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
-    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+    optimizePackageImports: ["lucide-react", "@radix-ui/react-icons"],
   },
 }
 
 // Bundle analyzer (optional, run with ANALYZE=true)
 const withBundleAnalyzer = (config) => {
-  if (process.env.ANALYZE === 'true') {
-    const { default: analyzer } = require('@next/bundle-analyzer')({
+  if (process.env.ANALYZE === "true") {
+    const { default: analyzer } = require("@next/bundle-analyzer")({
       enabled: true,
     })
     return analyzer(config)

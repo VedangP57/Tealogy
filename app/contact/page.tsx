@@ -1,7 +1,7 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import { Clock, MapPin, Phone } from "lucide-react"
 import type { Metadata } from "next"
-import { MapPin, Phone, Clock } from "lucide-react"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
 
 export const metadata: Metadata = {
   title: "Contact Us — Teaology Café Adajan, Surat",
@@ -20,7 +20,8 @@ export default function ContactPage() {
               Visit Us
             </h1>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Come experience handcrafted teas, shakes, and bites at our café in Adajan, Surat.
+              Come experience handcrafted teas, shakes, and bites at our café in
+              Adajan, Surat.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -30,10 +31,13 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-primary shrink-0 mt-1" />
                     <address className="not-italic">
-                      <h3 className="font-semibold text-lg text-primary mb-2">Address</h3>
+                      <h3 className="font-semibold text-lg text-primary mb-2">
+                        Address
+                      </h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Ground floor, Velocity Business Hub, G/7, LP Savani Rd, near Madhuvan Circle, TGB, Adajan Gam,
-                        Adajan, Surat, Gujarat 395009
+                        Ground floor, Velocity Business Hub, G/7, LP Savani Rd,
+                        near Madhuvan Circle, TGB, Adajan Gam, Adajan, Surat,
+                        Gujarat 395009
                       </p>
                     </address>
                   </div>
@@ -43,7 +47,9 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-primary shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-lg text-primary mb-2">Phone</h3>
+                      <h3 className="font-semibold text-lg text-primary mb-2">
+                        Phone
+                      </h3>
                       <a
                         href="tel:+917019431834"
                         className="text-muted-foreground hover:text-primary transition-colors text-lg"
@@ -58,9 +64,13 @@ export default function ContactPage() {
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-primary shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-lg text-primary mb-2">Opening Hours</h3>
+                      <h3 className="font-semibold text-lg text-primary mb-2">
+                        Opening Hours
+                      </h3>
                       <p className="text-muted-foreground">Monday - Sunday</p>
-                      <p className="text-muted-foreground font-semibold">10:00 AM – 10:00 PM</p>
+                      <p className="text-muted-foreground font-semibold">
+                        10:00 AM – 10:00 PM
+                      </p>
                     </div>
                   </div>
                 </div>

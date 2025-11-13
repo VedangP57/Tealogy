@@ -1,7 +1,7 @@
-import type React from "react"
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/react"
+import type React from "react"
 import "./globals.css"
 
 const inter = Inter({
@@ -15,7 +15,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://teaology.in"),
   title: {
-    default: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
+    default:
+      "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
     template: "%s | Teaology Café",
   },
   description:
@@ -51,7 +52,8 @@ export const metadata: Metadata = {
     url: "https://teaology.in",
     siteName: "Teaology Café",
     title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
-    description: "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
+    description:
+      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
     images: [
       {
         url: "/og-image.jpg",
@@ -64,7 +66,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Teaology Café — Best Tea & Snacks in Adajan, Surat",
-    description: "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
+    description:
+      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
     images: ["/og-image.jpg"],
     creator: "@teaology_cafe",
   },
@@ -103,7 +106,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://teaology.in",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -126,7 +129,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://vercel-insights.com" />
         <script
           type="application/ld+json"
@@ -142,7 +149,8 @@ export default function RootLayout({
               priceRange: "₹1–200",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Ground floor, Velocity Business Hub, G/7, LP Savani Rd, near Madhuvan Circle, TGB, Adajan Gam, Adajan",
+                streetAddress:
+                  "Ground floor, Velocity Business Hub, G/7, LP Savani Rd, near Madhuvan Circle, TGB, Adajan Gam, Adajan",
                 addressLocality: "Surat",
                 addressRegion: "Gujarat",
                 postalCode: "395009",
@@ -156,7 +164,15 @@ export default function RootLayout({
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
                   opens: "10:00",
                   closes: "22:00",
                 },
@@ -176,7 +192,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+      <body
+        className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
+      >
         {children}
         <Analytics />
       </body>

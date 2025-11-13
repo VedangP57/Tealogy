@@ -1,9 +1,9 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import CategoryCard from "@/components/category-card"
-import { getAllCategories } from "@/lib/menu"
 import type { Metadata } from "next"
 import Image from "next/image"
+import CategoryCard from "@/components/category-card"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { getAllCategories } from "@/lib/menu"
 
 export const metadata: Metadata = {
   title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 // Force static generation - no dynamic rendering
-export const dynamic = 'force-static'
+export const dynamic = "force-static"
 export const revalidate = false
 
 export default function Home() {
@@ -29,11 +29,10 @@ export default function Home() {
               Welcome to Tealogy Cafe
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
-              Discover premium teas, coffees, shakes, and delicious bites crafted for the perfect moment.
+              Discover premium teas, coffees, shakes, and delicious bites
+              crafted for the perfect moment.
             </p>
           </div>
-
-
 
           {/* Categories Grid */}
           <div className="max-w-6xl mx-auto">
@@ -51,14 +50,25 @@ export default function Home() {
         {/* Featured Section */}
         <section className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-white border-t border-border">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2 sm:mb-4">Crafted with Care</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2 sm:mb-4">
+              Crafted with Care
+            </h2>
             <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto px-2">
-              Each beverage and bite is prepared fresh with the finest ingredients to ensure every visit is memorable.
+              Each beverage and bite is prepared fresh with the finest
+              ingredients to ensure every visit is memorable.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {[
-                { img: "/images/feature-quality.jpg", title: "Premium Quality", desc: "Only the finest ingredients" },
-                { img: "/images/feature-fresh.jpg", title: "Fresh Daily", desc: "Prepared fresh every single day" },
+                {
+                  img: "/images/feature-quality.jpg",
+                  title: "Premium Quality",
+                  desc: "Only the finest ingredients",
+                },
+                {
+                  img: "/images/feature-fresh.jpg",
+                  title: "Fresh Daily",
+                  desc: "Prepared fresh every single day",
+                },
               ].map((feature, i) => (
                 <div
                   key={i}
@@ -75,8 +85,12 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-5 sm:p-6 md:p-8">
-                    <h3 className="font-bold text-base sm:text-lg text-primary mb-1 sm:mb-2">{feature.title}</h3>
-                    <p className="text-xs sm:text-sm text-muted-foreground">{feature.desc}</p>
+                    <h3 className="font-bold text-base sm:text-lg text-primary mb-1 sm:mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
+                      {feature.desc}
+                    </p>
                   </div>
                 </div>
               ))}

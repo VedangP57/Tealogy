@@ -1,8 +1,8 @@
 "use client"
 
-import { memo } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { memo } from "react"
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
           <Image
             src="/logo.png"
             alt="Teaology Café logo"
-            width={140}  // adjust to your logo’s natural size
+            width={140} // adjust to your logo’s natural size
             height={50}
             priority
             className="object-contain"

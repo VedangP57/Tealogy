@@ -1,7 +1,7 @@
 "use client"
 
-import { memo } from "react"
 import Image from "next/image"
+import { memo } from "react"
 import type { MenuItem } from "@/lib/menu-types"
 
 interface ItemRowProps {
@@ -41,7 +41,9 @@ function ItemRow({ item }: ItemRowProps) {
         )}
         <div className="flex-1 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
           <div>
-            <h4 className="font-semibold text-slate-900 text-base leading-snug">{item.name}</h4>
+            <h4 className="font-semibold text-slate-900 text-base leading-snug">
+              {item.name}
+            </h4>
           </div>
           <div className="sm:text-right">{formatPrice(item.price)}</div>
         </div>
