@@ -1,26 +1,37 @@
-import type React from "react"
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import { Inter } from "next/font/google"
+import type React from "react"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  preload: true,
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://teaology.in"),
   title: {
-    default: "Tealogy Cafe — Premium Teas, Shakes & Bites in Surat",
-    template: "%s | Tealogy Cafe",
+    default:
+      "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
+    template: "%s | Teaology Café",
   },
   description:
-    "Tealogy Cafe serves handcrafted teas, coffees, shakes, and delicious bites — made fresh daily. Order online or visit us in Adajan, Surat. Ground floor, Velocity Business Hub.",
+    "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
   keywords: [
-    "Tealogy Cafe",
-    "Tea Cafe Surat",
-    "Best Tea Cafe",
-    "Adrak Tea",
+    "Teaology Café",
+    "Adajan",
+    "Surat",
+    "Best Tea Café",
+    "Tea Shop",
     "Masala Tea",
+    "Coffee",
+    "Shakes",
+    "Tea Cafe Surat",
+    "Adrak Tea",
     "Cold Coffee",
     "Milkshakes",
     "Tea Shop Adajan",
@@ -39,22 +50,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://teaology.in",
-    siteName: "Tealogy Cafe",
-    title: "Tealogy Cafe — Premium Teas, Shakes & Bites in Surat",
-    description: "Handcrafted teas, coffees, and snacks. Freshly brewed, always delicious. Visit us in Adajan, Surat.",
+    siteName: "Teaology Café",
+    title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
+    description:
+      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tealogy Cafe - Premium Tea & Beverages",
+        alt: "Teaology Café - Premium Tea & Beverages",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tealogy Cafe — Premium Teas, Shakes & Bites",
-    description: "Order premium teas, shakes, and bites online or visit us in Surat.",
+    title: "Teaology Café — Best Tea & Snacks in Adajan, Surat",
+    description:
+      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
     images: ["/og-image.jpg"],
     creator: "@teaology_cafe",
   },
@@ -93,7 +106,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://teaology.in",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -115,6 +128,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://vercel-insights.com" />
         <script
           type="application/ld+json"
           suppressHydrationWarning
@@ -122,37 +142,62 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "CafeOrCoffeeShop",
-              "@id": "https://teaology.in",
-              name: "Tealogy Cafe",
+              name: "Teaology Café",
               image: "https://teaology.in/og-image.jpg",
-              description: "Handcrafted teas, coffees, shakes, and bites made fresh daily.",
               url: "https://teaology.in",
-              telephone: "+91 7019431834",
-              email: "contact@teaology.in",
+              telephone: "+91 70194 31834",
+              priceRange: "₹1–200",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Ground floor, Velocity Business Hub, G/7, LP Savani Rd, near Madhuvan Circle, TGB",
-                addressLocality: "Adajan",
+                streetAddress:
+                  "Ground floor, Velocity Business Hub, G/7, LP Savani Rd, near Madhuvan Circle, TGB, Adajan Gam, Adajan",
+                addressLocality: "Surat",
                 addressRegion: "Gujarat",
                 postalCode: "395009",
                 addressCountry: "IN",
               },
-              priceRange: "₹₹",
-              servesCuisine: ["Tea", "Coffee", "Snacks", "Shakes", "Beverages"],
-              sameAs: ["https://instagram.com/teaology_cafe", "https://facebook.com/teaology_cafe"],
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 21.192571,
+                longitude: 72.799736,
+              },
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                  opens: "07:00",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
+                  opens: "10:00",
                   closes: "22:00",
                 },
+              ],
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.6",
+                reviewCount: "48",
+              },
+              hasMenu: "https://teaology.in/menu",
+              sameAs: [
+                "https://www.zomato.com/surat/tealogy-cafe-adajan-gam",
+                "https://www.swiggy.com/restaurants/tealogy-cafe-adajan-gam-surat-1199302",
+                "https://www.justdial.com/Surat/Tealogy-Cafe-Gujarat-Near-Madhuvan-Circle-Adajan-Gam/0261PX261-X261-250129221936-E6X1_BZDET",
               ],
             }),
           }}
         />
       </head>
-      <body className={`${inter.className} font-sans antialiased bg-cream text-slate-900`}>{children}</body>
+      <body
+        className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
+      >
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

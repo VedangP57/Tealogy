@@ -1,8 +1,8 @@
 "use client"
 
-import { memo } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { memo } from "react"
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
           <Image
             src="/logo.png"
             alt="Teaology Café logo"
-            width={140}  // adjust to your logo’s natural size
+            width={140} // adjust to your logo’s natural size
             height={50}
             priority
             className="object-contain"
@@ -22,20 +22,18 @@ function Header() {
 
         {/* Right-side nav */}
         <nav className="flex items-center gap-6">
-          {/* <Link
-            href="/login"
+          <Link
+            href="/menu"
             className="text-sm font-medium text-slate-700 hover:text-primary transition-colors"
           >
-            Login
-          </Link> */}
-
-          {/* <button
-            aria-label="Open cart"
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-            type="button"
+            Menu
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm font-medium text-slate-700 hover:text-primary transition-colors"
           >
-            <ShoppingCart size={20} className="text-primary" />
-          </button> */}
+            Contact
+          </Link>
         </nav>
       </div>
     </header>

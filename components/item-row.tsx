@@ -1,7 +1,7 @@
 "use client"
 
-import { memo } from "react"
 import Image from "next/image"
+import { memo } from "react"
 import type { MenuItem } from "@/lib/menu-types"
 
 interface ItemRowProps {
@@ -28,13 +28,22 @@ function ItemRow({ item }: ItemRowProps) {
     <div className="border-b border-border pb-4 mb-4 last:border-b-0 last:mb-0">
       <div className="flex gap-4 mb-2">
         {item.image && (
-          <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden">
-            <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-cover" sizes="80px" />
+          <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-gray-100">
+            <Image
+              src={item.image || "/placeholder.svg"}
+              alt={item.name}
+              fill
+              className="object-cover"
+              sizes="80px"
+              loading="lazy"
+            />
           </div>
         )}
         <div className="flex-1 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
           <div>
-            <h4 className="font-semibold text-slate-900 text-base leading-snug">{item.name}</h4>
+            <h3 className="font-semibold text-slate-900 text-base leading-snug">
+              {item.name}
+            </h3>
           </div>
           <div className="sm:text-right">{formatPrice(item.price)}</div>
         </div>

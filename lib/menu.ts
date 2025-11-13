@@ -1,5 +1,5 @@
 import menuData from "@/data/menu.json"
-import type { MenuData, MenuCategory } from "./menu-types"
+import type { MenuCategory, MenuData } from "./menu-types"
 
 const menu: MenuData = menuData
 
