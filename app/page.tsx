@@ -81,13 +81,13 @@ export default function Home() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      loading="lazy"
+                      priority={i === 0}
                     />
                   </div>
                   <div className="p-5 sm:p-6 md:p-8">
-                    <h3 className="font-bold text-base sm:text-lg text-primary mb-1 sm:mb-2">
+                    <h2 className="font-bold text-base sm:text-lg text-primary mb-1 sm:mb-2">
                       {feature.title}
-                    </h3>
+                    </h2>
                     <p className="text-xs sm:text-sm text-muted-foreground">
                       {feature.desc}
                     </p>

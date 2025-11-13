@@ -158,9 +158,9 @@ export default async function CategoryPage({
               <aside className="lg:col-span-1">
                 <div className="sticky top-20">
                   <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
-                    <h3 className="text-sm font-semibold text-primary mb-2">
+                    <h2 className="text-sm font-semibold text-primary mb-2">
                       About {category.name}
-                    </h3>
+                    </h2>
                     <p className="text-sm text-muted-foreground mb-4">
                       Enjoy Teaology’s carefully curated{" "}
                       {category.name.toLowerCase()}. Made fresh with premium
@@ -168,9 +168,9 @@ export default async function CategoryPage({
                     </p>
 
                     <div className="border-t border-border pt-4 mt-4">
-                      <h4 className="text-xs text-muted-foreground uppercase tracking-wide">
+                      <h3 className="text-xs text-muted-foreground uppercase tracking-wide">
                         Quick info
-                      </h4>
+                      </h3>
                       <ul className="mt-2 space-y-2 text-sm text-muted-foreground">
                         <li>• Order for pickup or local delivery</li>
                         <li>• Freshly prepared</li>
@@ -181,9 +181,9 @@ export default async function CategoryPage({
 
                   {/* Optional: small promo / hours card */}
                   <div className="mt-4 bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
-                    <h4 className="text-sm font-semibold text-primary mb-2">
+                    <h2 className="text-sm font-semibold text-primary mb-2">
                       Opening Hours
-                    </h4>
+                    </h2>
                     <p className="text-sm text-muted-foreground">
                       Mon - Sun: 8:00 AM – 10:00 PM
                     </p>
