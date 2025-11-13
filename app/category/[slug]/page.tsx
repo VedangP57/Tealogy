@@ -4,7 +4,6 @@ import ItemRow from "@/components/item-row"
 import { getCategoryBySlug, getAllCategorySlugs } from "@/lib/menu"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 // Force static generation - no dynamic rendering
@@ -96,7 +95,19 @@ export default async function CategoryPage({
                   className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-2 font-medium text-sm"
                   aria-label="Back to menu"
                 >
-                  <ChevronLeft size={18} />
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
                   Back to Menu
                 </Link>
 
