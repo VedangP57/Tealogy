@@ -38,3 +38,9 @@ bun.lock
 .vscode/
 *.swp
 *.swo
+
+# Lighthouse
+.lighthouseci/
+
+# Bundle analyzer
+.next/analyze/
