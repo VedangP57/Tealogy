@@ -6,9 +6,9 @@ import type { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Tealogy Cafe - Premium Tea & Beverages",
+  title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
   description:
-    "Explore our collection of premium teas, coffees, shakes, and delicious bites. Fresh flavors, exceptional quality in Surat.",
+    "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
 }
 
 // Force static generation - no dynamic rendering

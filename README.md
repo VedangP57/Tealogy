@@ -10,7 +10,9 @@ A modern, static Next.js website for Teaology featuring a comprehensive menu of 
 - **Modern UI**: Clean, spacious card-based design with warm color palette
 - **Accessibility**: Semantic HTML, ARIA labels, and keyboard-friendly interactions
 - **TypeScript**: Full type safety throughout the application
-- **SEO Optimized**: Meaningful meta tags and structured content
+- **SEO Optimized**: Meaningful meta tags, structured data (JSON-LD), and local SEO
+- **Local Business Schema**: Complete LocalBusiness structured data for Google Knowledge Panel
+- **Google Maps Integration**: Embedded map on contact page with directions
 
 ## 🚀 Quick Start
 
@@ -104,8 +106,9 @@ Edit `data/menu.json` to add or modify categories and menu items:
 ## 📱 Pages
 
 - **Home** (`/`) - Menu categories overview
+- **Menu** (`/menu`) - Full menu overview
 - **Category** (`/category/[slug]`) - Items in a category
-- **Login** (`/login`) - Simple login form (demo)
+- **Contact** (`/contact`) - Location, hours, and contact information with Google Maps
 
 ## 🌐 Deployment
 
@@ -134,11 +137,19 @@ npm run build
 - **Image Optimization**: Lazy loading with Next.js Image component
 - **CSS**: Tailwind CSS with tree-shaking
 
+## 🔍 Local SEO Setup
+
+This site is optimized for local search visibility. See `LOCAL_SEO_SETUP.md` for:
+- Google Business Profile setup instructions
+- Search Console submission steps
+- NAP consistency checklist
+- Structured data validation
+- Review generation strategies
+
 ## 🔮 Future Enhancements
 
 - Shopping cart with localStorage persistence
 - Item preview modals
-- Analytics integration
 - Order placement system
 - Admin dashboard for menu management
 
