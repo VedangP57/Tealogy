@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { memo } from "react"
 import Image from "next/image"
 import type { MenuItem } from "@/lib/menu-types"
 
@@ -8,9 +8,7 @@ interface ItemRowProps {
   item: MenuItem
 }
 
-export default function ItemRow({ item }: ItemRowProps) {
-  const [note, setNote] = useState("")
-
+function ItemRow({ item }: ItemRowProps) {
   const formatPrice = (price: string) => {
     if (price.includes("/")) {
       const [small, large] = price.split("/")
@@ -51,3 +49,5 @@ export default function ItemRow({ item }: ItemRowProps) {
     </div>
   )
 }
+
+export default memo(ItemRow)

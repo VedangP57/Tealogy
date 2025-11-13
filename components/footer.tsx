@@ -1,7 +1,8 @@
+import { memo } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Footer() {
+function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -52,3 +53,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default memo(Footer)

@@ -7,6 +7,11 @@ import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 import type { Metadata } from "next"
 
+// Force static generation - no dynamic rendering
+export const dynamic = 'force-static'
+export const dynamicParams = false
+export const revalidate = false
+
 export async function generateStaticParams() {
   return getAllCategorySlugs().map((slug) => ({
     slug,

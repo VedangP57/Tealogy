@@ -1,3 +1,4 @@
+import { memo } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import type { MenuCategory } from "@/lib/menu-types"
@@ -22,7 +23,7 @@ interface CategoryCardProps {
   category: MenuCategory
 }
 
-export default function CategoryCard({ category }: CategoryCardProps) {
+function CategoryCard({ category }: CategoryCardProps) {
   const imagePath = categoryImages[category.slug] || "/images/category/tea.jpg"
 
   return (
@@ -39,3 +40,5 @@ export default function CategoryCard({ category }: CategoryCardProps) {
     </Link>
   )
 }
+
+export default memo(CategoryCard)

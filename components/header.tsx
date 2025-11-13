@@ -1,9 +1,10 @@
 "use client"
 
+import { memo } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Header() {
+function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-border shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -40,3 +41,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default memo(Header)

@@ -11,6 +11,10 @@ export const metadata: Metadata = {
     "Explore our collection of premium teas, coffees, shakes, and delicious bites. Fresh flavors, exceptional quality in Surat.",
 }
 
+// Force static generation - no dynamic rendering
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export default function Home() {
   const categories = getAllCategories()
 
