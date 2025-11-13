@@ -17,6 +17,7 @@ function Footer() {
                 width={140}
                 height={50}
                 className="object-contain brightness-0 invert"
+                loading="lazy"
               />
             </Link>
           </div>

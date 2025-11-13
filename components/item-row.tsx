@@ -28,8 +28,15 @@ function ItemRow({ item }: ItemRowProps) {
     <div className="border-b border-border pb-4 mb-4 last:border-b-0 last:mb-0">
       <div className="flex gap-4 mb-2">
         {item.image && (
-          <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden">
-            <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-cover" sizes="80px" />
+          <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-gray-100">
+            <Image
+              src={item.image || "/placeholder.svg"}
+              alt={item.name}
+              fill
+              className="object-cover"
+              sizes="80px"
+              loading="lazy"
+            />
           </div>
         )}
         <div className="flex-1 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">

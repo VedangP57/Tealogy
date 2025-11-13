@@ -30,7 +30,14 @@ function CategoryCard({ category }: CategoryCardProps) {
     <Link href={`/category/${category.slug}`}>
       <div className="bg-white rounded-lg sm:rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-200 h-full shadow-sm hover:shadow-md">
         <div className="relative h-40 sm:h-48 md:h-56 bg-gray-100">
-          <Image src={imagePath || "/placeholder.svg"} alt={category.name} fill className="object-cover" />
+          <Image
+            src={imagePath || "/placeholder.svg"}
+            alt={`${category.name} category`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            loading="lazy"
+          />
         </div>
         <div className="p-4 sm:p-5 md:p-6 text-center">
           <h3 className="font-bold text-base sm:text-lg md:text-xl text-primary mb-1 line-clamp-2">{category.name}</h3>

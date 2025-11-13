@@ -33,29 +33,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Featured Images Grid
-          <div className="max-w-6xl mx-auto mb-8 sm:mb-12">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-4 px-2 sm:px-4">
-              {[
-                { img: "/images/tea.jpg", label: "Tea" },
-                { img: "/images/coffee.jpg", label: "Coffee" },
-                { img: "/images/shake.jpg", label: "Shakes" },
-                { img: "/images/bites.jpg", label: "Bites" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  className="relative h-28 sm:h-36 md:h-44 rounded-lg sm:rounded-xl overflow-hidden shadow-sm"
-                >
-                  <Image
-                    src={item.img || "/placeholder.svg"}
-                    alt={item.label}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
-          </div> */}
+
 
           {/* Categories Grid */}
           <div className="max-w-6xl mx-auto">
@@ -87,7 +65,14 @@ export default function Home() {
                   className="bg-background rounded-lg sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="relative h-40 sm:h-48 md:h-56 bg-gray-100">
-                    <Image src={feature.img || "/placeholder.svg"} alt={feature.title} fill className="object-cover" />
+                    <Image
+                      src={feature.img || "/placeholder.svg"}
+                      alt={feature.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-5 sm:p-6 md:p-8">
                     <h3 className="font-bold text-base sm:text-lg text-primary mb-1 sm:mb-2">{feature.title}</h3>
