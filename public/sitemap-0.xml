@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://tealogy-cafe.vercel.app/category/bites</loc><lastmod>2025-11-14T19:39:10.301Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/coffee</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/cold-coffee</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/fruit-shakes</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/hot-beverages</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/hot-lemon-tea</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/ice-crushes</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/ice-tea</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/maggi</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/milk</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/mocktails</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/shakes</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/category/tea</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/contact</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app/menu</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://tealogy-cafe.vercel.app</loc><lastmod>2025-11-14T19:39:10.302Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/bites</loc><lastmod>2025-11-14T20:11:11.111Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/coffee</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/cold-coffee</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/fruit-shakes</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/hot-beverages</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/hot-lemon-tea</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/ice-crushes</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/ice-tea</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/maggi</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/milk</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/mocktails</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/shakes</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/category/tea</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/contact</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app/menu</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://tealogy-cafe.vercel.app</loc><lastmod>2025-11-14T20:11:11.113Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
 </urlset>
