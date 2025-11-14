@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "build:prod": "next build && next-sitemap",
-    "postbuild": "node scripts/generate-extra-sitemap.js && next-sitemap",
     "dev": "next dev",
+    "build": "next build",
+    "postbuild": "node scripts/generate-extra-sitemap.js && next-sitemap",
+    "generate:sitemap": "next-sitemap",
+    "build:full": "bun run build && bunx next-sitemap",
+    "start": "next start",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "start": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "test:ci": "lhci autorun",
     "type-check": "tsc --noEmit"

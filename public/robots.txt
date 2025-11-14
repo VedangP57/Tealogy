@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://teaology.in
+Host: https://tealogy-cafe.vercel.app
 
 # Sitemaps
-Sitemap: https://teaology.in/sitemap.xml
-Sitemap: https://teaology.in/sitemap-extra.xml
+Sitemap: https://tealogy-cafe.vercel.app/sitemap.xml
+Sitemap: https://tealogy-cafe.vercel.app/sitemap-extra.xml

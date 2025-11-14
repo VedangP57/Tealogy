@@ -12,8 +12,10 @@ const inter = Inter({
   preload: true,
 })
 
+const SITE_URL = process.env.SITE_URL || "https://tealogy-cafe.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://teaology.in"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default:
       "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     "Handcrafted Beverages",
     "Fresh Teas",
   ],
-  authors: [{ name: "Tealogy Cafe", url: "https://teaology.in" }],
+  authors: [{ name: "Tealogy Cafe", url: SITE_URL }],
   creator: "Tealogy Cafe",
   publisher: "Tealogy Cafe",
   formatDetection: {
@@ -49,14 +51,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://teaology.in",
+    url: SITE_URL,
     siteName: "Teaology Café",
     title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
     description:
       "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Teaology Café - Premium Tea & Beverages",
@@ -68,11 +70,15 @@ export const metadata: Metadata = {
     title: "Teaology Café — Best Tea & Snacks in Adajan, Surat",
     description:
       "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
-    images: ["/og-image.jpg"],
+    images: [`${SITE_URL}/og-image.jpg`],
     creator: "@teaology_cafe",
   },
   icons: {
     icon: [
+      {
+        url: "/logo.png",
+        type: "image/png",
+      },
       {
         url: "/favicon.ico",
         sizes: "any",
@@ -90,6 +96,7 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
+    shortcut: "/logo.png",
   },
   manifest: "/manifest.json",
   robots: {
@@ -104,7 +111,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://teaology.in",
+    canonical: SITE_URL,
   },
   generator: "v0.app",
 }
@@ -144,8 +151,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "CafeOrCoffeeShop",
               name: "Teaology Café",
-              image: "https://teaology.in/og-image.jpg",
-              url: "https://teaology.in",
+              image: `${SITE_URL}/og-image.jpg`,
+              url: SITE_URL,
               telephone: "+91 70194 31834",
               priceRange: "₹1–200",
               address: {
@@ -183,7 +190,7 @@ export default function RootLayout({
                 ratingValue: "4.6",
                 reviewCount: "48",
               },
-              hasMenu: "https://teaology.in/menu",
+              hasMenu: `${SITE_URL}/menu`,
               sameAs: [
                 "https://www.zomato.com/surat/tealogy-cafe-adajan-gam",
                 "https://www.swiggy.com/restaurants/tealogy-cafe-adajan-gam-surat-1199302",

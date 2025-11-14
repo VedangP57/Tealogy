@@ -9,7 +9,7 @@ const path = require('path');
   }
 
   const menu = JSON.parse(fs.readFileSync(menuPath, 'utf8'));
-  const domain = process.env.SITE_URL || 'https://teaology.in';
+  const domain = process.env.SITE_URL || 'https://tealogy-cafe.vercel.app';
   const urls = [];
 
   // Add category pages explicitly

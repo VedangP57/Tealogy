@@ -31,6 +31,7 @@ export async function generateMetadata({
     }
   }
 
+  const SITE_URL = process.env.SITE_URL || "https://tealogy-cafe.vercel.app";
   const sampleItems = category.items
     .slice(0, 3)
     .map((i) => i.name)
@@ -46,16 +47,16 @@ export async function generateMetadata({
       category.name,
     ],
     alternates: {
-      canonical: `https://teaology.in/category/${slug}`,
+      canonical: `${SITE_URL}/category/${slug}`,
     },
     openGraph: {
       title: `${category.name} | Tealogy Cafe`,
       description: `Order premium ${category.name.toLowerCase()} from Tealogy Cafe in Surat. Made fresh daily.`,
-      url: `https://teaology.in/category/${slug}`,
+      url: `${SITE_URL}/category/${slug}`,
       type: "website",
       images: [
         {
-          url: "/og-image.jpg",
+          url: `${SITE_URL}/og-image.jpg`,
           width: 1200,
           height: 630,
           alt: `${category.name} at Tealogy Cafe`,
@@ -66,7 +67,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${category.name} | Tealogy Cafe`,
       description: `Order premium ${category.name.toLowerCase()} from Tealogy Cafe in Surat.`,
-      images: ["/og-image.jpg"],
+      images: [`${SITE_URL}/og-image.jpg`],
     },
   }
 }
