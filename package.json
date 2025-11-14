@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "build:prod": "next build && next-sitemap",
-    "postbuild": "next-sitemap",
+    "postbuild": "node scripts/generate-extra-sitemap.js && next-sitemap",
     "dev": "next dev",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",

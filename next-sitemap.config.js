@@ -1,42 +1,37 @@
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://teaology.in",
+  siteUrl: process.env.SITE_URL || 'https://teaology.in',
   generateRobotsTxt: true,
-  sitemapSize: 5000,
-  changefreq: "weekly",
+  sitemapSize: 7000,
+  changefreq: 'daily',
   priority: 0.7,
-  exclude: ["/login", "/404"],
-  additionalPaths: async (_config) => [
-    {
-      loc: "/",
-      changefreq: "daily",
-      priority: 1.0,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: "/menu",
-      changefreq: "daily",
-      priority: 0.9,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: "/contact",
-      changefreq: "monthly",
-      priority: 0.8,
-      lastmod: new Date().toISOString(),
-    },
+  exclude: [
+    '/login',
+    '/admin/**',
+    '/api/**',
+    '/404',
+    '/500'
   ],
   robotsTxtOptions: {
+    additionalSitemaps: [
+      `${process.env.SITE_URL || 'https://teaology.in'}/sitemap-extra.xml`
+    ],
     policies: [
       {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/login"],
-      },
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-        crawlDelay: 0,
-      },
-    ],
+        userAgent: '*',
+        allow: '/',
+      }
+    ]
   },
-}
+  transform: async (config, path) => {
+    const url = `${config.siteUrl.replace(/\/$/, '')}${path}`;
+    const nowIso = new Date().toISOString();
+    
+    return {
+      loc: url,
+      lastmod: nowIso,
+      changefreq: path === '/' ? 'daily' : 'weekly',
+      priority: path === '/' ? 1.0 : path.startsWith('/category') ? 0.8 : 0.7,
+    };
+  },
+};
