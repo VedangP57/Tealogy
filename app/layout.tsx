@@ -16,19 +16,20 @@ const SITE_URL = process.env.SITE_URL || "https://tealogy-cafe.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: "Tealogy Cafe",
   title: {
-    default:
-      "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
-    template: "%s | Teaology Café",
+    default: "Tealogy Cafe – Best Tea & Snacks in Adajan, Surat",
+    template: "%s | Tealogy Cafe",
   },
   description:
-    "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
+    "Tealogy Cafe in Adajan, Surat – handcrafted teas, coffees, shakes & fresh snacks. Open 10 AM – 10 PM. Call +91 70194 31834 or order online.",
   keywords: [
-    "Teaology Café",
-    "Adajan",
-    "Surat",
-    "Best Tea Café",
-    "Tea Shop",
+    "Tealogy Cafe",
+    "Tea cafe Surat",
+    "Adajan tea shop",
+    "best tea in surat",
+    "coffee surat",
+    "snacks surat",
     "Masala Tea",
     "Coffee",
     "Shakes",
@@ -52,51 +53,31 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
-    siteName: "Teaology Café",
-    title: "Teaology Café — Best Tea & Snacks in Adajan, Surat | Order Online",
+    siteName: "Tealogy Cafe",
+    title: "Tealogy Cafe – Premium Tea & Snacks in Surat",
     description:
-      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
+      "Premium handcrafted teas, coffees & snacks in Adajan, Surat. Visit Tealogy Cafe or order online.",
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
+        url: `${SITE_URL}/og-main.jpg`,
         width: 1200,
         height: 630,
-        alt: "Teaology Café - Premium Tea & Beverages",
+        alt: "Tealogy Cafe – Tea, Coffee & Snacks",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teaology Café — Best Tea & Snacks in Adajan, Surat",
+    title: "Tealogy Cafe – Premium Tea & Snacks in Surat",
     description:
-      "Teaology Café in Adajan, Surat — handcrafted teas, shakes & bites. Open 10:00 AM–10:00 PM. Call +91 70194 31834 or order online.",
-    images: [`${SITE_URL}/og-image.jpg`],
+      "Handcrafted teas, coffees, shakes & snacks. Order online from Tealogy Cafe.",
+    images: [`${SITE_URL}/og-main.jpg`],
     creator: "@teaology_cafe",
   },
   icons: {
-    icon: [
-      {
-        url: "/logo.png",
-        type: "image/png",
-      },
-      {
-        url: "/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "/icon-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-    ],
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
-    shortcut: "/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
   },
   manifest: "/manifest.json",
   robots: {
@@ -113,7 +94,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
-  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -149,9 +129,22 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Tealogy Cafe",
+              url: SITE_URL,
+              logo: `${SITE_URL}/icon.png`,
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
               "@type": "CafeOrCoffeeShop",
-              name: "Teaology Café",
-              image: `${SITE_URL}/og-image.jpg`,
+              name: "Tealogy Cafe",
+              image: `${SITE_URL}/og-main.jpg`,
               url: SITE_URL,
               telephone: "+91 70194 31834",
               priceRange: "₹1–200",
